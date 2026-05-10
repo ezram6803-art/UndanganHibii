@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Grand Opening Hibi City</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dfe7d8, #bfcbb7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  animation: muncul 1.2s ease;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: #4f6f52;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 52px;
+  color: #395144;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(79, 111, 82, 0.3);
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #6b8a6d;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #395144;
+  font-weight: bold;
+}
+
+.info-box {
+  background: #f4f8f1;
+  border: 2px solid #d7e4d0;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.info-box p {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.countdown {
+  background: linear-gradient(135deg, #4f6f52, #6b8a6d);
+  color: white;
+  padding: 18px;
+  border-radius: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(79, 111, 82, 0.3);
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(135deg, #4f6f52, #395144);
+  color: white;
+  text-decoration: none;
+  padding: 16px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 14px;
+  box-shadow: 0 12px 25px rgba(57, 81, 68, 0.35);
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.button:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 25px;
+  color: #666;
+  font-size: 15px;
+}
+
+.glow {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(79, 111, 82, 0.08);
+  border-radius: 50%;
+  filter: blur(60px);
+  top: -80px;
+  right: -80px;
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 700px) {
+  .banner {
+    height: 220px;
+  }
+
+  .content {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .countdown {
+    font-size: 22px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 14px 30px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="glow"></div>
+
+  <!-- GANTI URL GAMBAR DI SINI -->
+  <img
+    src="https://i.ibb.co.com/wNYWv1SP/file-00000000b1687206a817bfd98d11eb89.png"
+    class="banner"
+    alt="Hibi City"
+  >
+
+  <div class="content">
+
+    <div class="badge">🌆 UNDANGAN RESMI KOMUNITAS</div>
+
+    <h1>HIBI CITY</h1>
+    <p class="subtitle">Grand Opening Server Minecraft Semi Roleplay Kota</p>
+
+    <p class="description">
+      Kepada seluruh <span class="highlight">anggota circle ini</span>,
+      kami dengan bangga mengundang kalian untuk hadir pada pembukaan resmi
+      server Minecraft bertema perkotaan <span class="highlight">HIBI CITY</span>.
+      <br><br>
+      Mari bersama membangun kota impian, menjalankan bisnis,
+      mencari pekerjaan, dan menciptakan pengalaman bermain yang seru!
+    </p>
+
+    <div class="info-box">
+      <p><b>📅 Tanggal:</b> Senin</p>
+      <p><b>🕒 Waktu:</b> 20:00 WIB</p>
+      <p><b>🌐 IP Server:</b> hibilife.my.id</p>
+      <p><b>🎮 Platform:</b> Minecraft Java</p>
+      <p><b>🎁 Bonus:</b> Reward spesial untuk pemain yang hadir saat opening</p>
+    </div>
+
+    <div class="countdown" id="countdown">
+      ⏳ Loading countdown...
+    </div>
+
+
+    <!-- TOMBOL COPY IP -->
+    <div style="margin-bottom: 25px;">
+      <button onclick="copyIP()" class="button">
+        📋 Copy IP Server
+      </button>
+    </div>
+
+    <!-- TOMBOL DISCORD DAN WHATSAPP -->
+    <div class="button-group">
+      <a
+        href="https://discord.gg/pcXYbQcH4"
+        target="_blank"
+        class="button"
+      >
+        💬 Discord
+      </a>
+
+      <a
+        href="https://chat.whatsapp.com/L7uZSF5GMNS11P22VcPRZc?mlu=0&s=cl&p=a"
+        target="_blank"
+        class="button"
+      >
+        📱 WhatsApp
+      </a>
+    </div>
+
+    <p class="footer">
+      🐢 Sampai jumpa di Hibi City dan jadilah bagian dari sejarah pembukaan kota ini!
+    </p>
+
+  </div>
+</div>
+
+<script>
+const targetDate = new Date("May 11, 2026 20:00:00").getTime();
+const countdown = document.getElementById("countdown");
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  if (distance <= 0) {
+    countdown.innerHTML = "🎉 SERVER SUDAH RESMI DIBUKA!";
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor(
+    (distance % (1000 * 60 * 60)) / (1000 * 60)
+  );
+  const seconds = Math.floor(
+    (distance % (1000 * 60)) / 1000
+  );
+
+  countdown.innerHTML =
+    `⏳ ${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
+}
+
+function copyIP() {
+  navigator.clipboard.writeText("hibilife.my.id");
+  alert("📋 IP Server berhasil disalin!");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
