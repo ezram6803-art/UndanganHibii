@@ -199,7 +199,6 @@ h1 {
 <div class="card">
   <div class="glow"></div>
 
-  <!-- GANTI URL GAMBAR DI SINI -->
   <img
     src="file_00000000b1687206a817bfd98d11eb89.png"
     class="banner"
@@ -207,7 +206,6 @@ h1 {
   >
 
   <div class="content">
-
     <div class="badge">🌆 UNDANGAN RESMI KOMUNITAS</div>
 
     <h1>HIBI CITY</h1>
@@ -234,19 +232,17 @@ h1 {
       ⏳ Loading countdown...
     </div>
 
-
-    <!-- TOMBOL COPY IP -->
     <div style="margin-bottom: 25px;">
       <button onclick="copyIP()" class="button">
         📋 Copy IP Server
       </button>
     </div>
 
-    <!-- TOMBOL DISCORD DAN WHATSAPP -->
     <div class="button-group">
       <a
         href="https://discord.gg/pcXYbQcH4"
         target="_blank"
+        rel="noopener noreferrer"
         class="button"
       >
         💬 Discord
@@ -255,6 +251,7 @@ h1 {
       <a
         href="https://chat.whatsapp.com/L7uZSF5GMNS11P22VcPRZc?mlu=0&s=cl&p=a"
         target="_blank"
+        rel="noopener noreferrer"
         class="button"
       >
         📱 WhatsApp
@@ -264,7 +261,6 @@ h1 {
     <p class="footer">
       🐢 Sampai jumpa di Hibi City dan jadilah bagian dari sejarah pembukaan kota ini!
     </p>
-
   </div>
 </div>
 
@@ -273,32 +269,33 @@ const targetDate = new Date("May 11, 2026 20:00:00").getTime();
 const countdown = document.getElementById("countdown");
 
 function updateCountdown() {
-  const now = new Date().getTime();
+  const now = Date.now();
   const distance = targetDate - now;
 
   if (distance <= 0) {
-    countdown.innerHTML = "🎉 SERVER SUDAH RESMI DIBUKA!";
+    countdown.textContent = "🎉 SERVER SUDAH RESMI DIBUKA!";
     return;
   }
 
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor(
-    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  const minutes = Math.floor(
-    (distance % (1000 * 60 * 60)) / (1000 * 60)
-  );
-  const seconds = Math.floor(
-    (distance % (1000 * 60)) / 1000
-  );
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  countdown.innerHTML =
+  countdown.textContent =
     `⏳ ${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
 }
 
 function copyIP() {
-  navigator.clipboard.writeText("hibilife.my.id");
-  alert("📋 IP Server berhasil disalin!");
+  const ip = "hibilife.my.id";
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(ip)
+      .then(() => alert("📋 IP Server berhasil disalin!"))
+      .catch(() => alert("IP Server: " + ip));
+  } else {
+    alert("IP Server: " + ip);
+  }
 }
 
 updateCountdown();
